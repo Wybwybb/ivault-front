@@ -13,7 +13,7 @@
           >
             LOGIN
           </h1>
-          <form class="space-y-4 md:space-y-6" action="#">
+          <div class="space-y-4 md:space-y-6" action="#">
             <div>
               <label
                 for="email"
@@ -21,6 +21,7 @@
                 >Username</label
               >
               <input
+              v-model="username"
                 type="email"
                 name="email"
                 id="email"
@@ -36,6 +37,7 @@
                 >Password</label
               >
               <input
+              v-model="password"
                 type="password"
                 name="password"
                 id="password"
@@ -68,6 +70,7 @@
               >
             </div>
             <button
+            @click="login"
               type="submit"
               class="w-full text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
             >
@@ -81,11 +84,44 @@
                 >Sign up</a
               >
             </p>
-          </form>
+          </div>
         </div>
       </div>
     </div>
   </section>
 </template>
 
-<script setup></script>
+<script setup>
+import { ref, onMounted} from "vue";
+import {useRouter} from "vue-router";
+onMounted(()=>{
+login();
+
+});
+
+const router = useRouter();
+
+
+const username = ref();
+const password = ref();
+
+
+const login = async () => {
+  const response = await fetch (`http://localhost:8080/getUsers`);
+  const data = await response.json();
+  
+  for(var i = 0 ;  i < data.length; i ++){
+    if(data[i].username==username.value){
+      if(data[i].password == password.value){
+        router.push("/home");
+      }
+      break;
+    }
+    else{
+      console.log("bad loginbrah!");
+    }
+  }
+}
+
+
+</script>
