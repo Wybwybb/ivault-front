@@ -7,13 +7,18 @@ const Signup = () => import("./pages/Signup.vue");
 const Home = () => import("./pages/Home.vue");
 const LandingPage = () => import("./pages/LandingPage.vue");
 const AboutUs = () => import("./pages/AboutUs.vue");
+const Home1 = () => import("./pages/Home1.vue");
+const OTP = () => import("./pages/OTP.vue");
 
 const routes = [
-  { path: "", component: Home },
+  { path: "/home", component: Home },
   { path: "/login", component: Login, meta: { auth: false } },
   { path: "/signup", component: Signup, meta: { auth: false } },
   { path: "/landingpage", component: LandingPage, meta: { auth: true } },
   { path: "/about", component: AboutUs, meta: { auth: false } },
+  { path: "/home1", component: Home1, meta: { auth: false } },
+  { path: "/home", component: Home1, meta: { auth: false } },
+  { path: "/otp", component: OTP, meta: { auth: false } },
 ];
 
 const router = createRouter({
