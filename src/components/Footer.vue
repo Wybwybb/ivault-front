@@ -17,7 +17,7 @@
             </li>
             <li>
               <a href="#" class="text-sm text-gray-400 hover:text-gray-300 mx-3">Contact</a>
-            </li>
+            </li> 
           </ul>
         </div>
       </div>

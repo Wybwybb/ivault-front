@@ -41,9 +41,6 @@ import { useRouter } from 'vue-router';
 const router = useRouter();
 
 const verifyAccount = () => {
-    // Perform any necessary verification logic here
-
-    // Redirect to the home page after verification
-    router.push({ name: 'home' }); // Replace 'home' with the name of your home route
+    router.push({ name: 'home' });
 }
 </script>

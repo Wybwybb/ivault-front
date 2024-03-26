@@ -16,7 +16,7 @@
             </div>
             <div class="mb-4">
               <label for="password" class="block text-gray-700 font-bold mb-2">Password:</label>
-              <input type="text" v-model="password" id="password" name="password" class="border border-gray-300 rounded-md p-2 w-full" placeholder="Enter password">
+              <input type="password" v-model="password" id="password" name="password" class="border border-gray-300 rounded-md p-2 w-full" placeholder="Enter password">
             </div>
             <button @click="addAccount" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Add Account</button>
           </div>
@@ -26,10 +26,12 @@
         <div class="bg-dark bg-sky-100">
           <div class="p-6">
             <h1 class="text-lg font-bold mb-4">Account Details</h1>
-            <div v-if="website || username || password">
-              <p><strong>Website:</strong> {{ website }}</p>
-              <p><strong>Username:</strong> {{ username }}</p>
-              <p><strong>Password:</strong> {{ password }}</p>
+            <div v-if="accounts.length > 0">
+              <div v-for="(account, index) in accounts" :key="index" class="bg-white rounded-lg shadow-md p-4 mb-4">
+                <p><strong>Website:</strong> {{ account.website }}</p>
+                <p><strong>Username:</strong> {{ account.username }}</p>
+                <p><strong>Password:</strong> {{ maskPassword(account.password) }}</p>
+              </div>
             </div>
             <div v-else>
               <p>No account details entered yet.</p>
@@ -47,10 +49,27 @@ import { ref } from 'vue';
 const website = ref('');
 const username = ref('');
 const password = ref('');
+const accounts = ref([]);
 
 const addAccount = () => {
-  console.log("Website:", website.value);
-  console.log("Username:", username.value);
-  console.log("Password:", password.value);
+  if (!website.value || !username.value || !password.value) {
+    alert('Please fill in all fields.');
+    return;
+  }
+
+  const newAccount = {
+    website: website.value,
+    username: username.value,
+    password: password.value
+  };
+  accounts.value.push(newAccount);
+  
+  website.value = '';
+  username.value = '';
+  password.value = '';
+};
+
+const maskPassword = (password) => {
+  return '•'.repeat(password.length);
 };
 </script>
