@@ -64,8 +64,14 @@
                       </button>
                       <p class="text-center text-sm font-light text-gray-500 dark:text-gray-400">
                           Have an account?
-                          <a href="#" class="font-medium text-primary-600 hover:underline dark:text-primary-500">Login</a>
-                      </p>
+                         <a
+                            href="#"
+                            @click="goToLogin"
+                            class="font-medium text-primary-600 hover:underline dark:text-primary-500"
+                        >
+                            Login
+                             </a>                     
+                        </p>
                   </form>
               </div>
           </div>
@@ -89,6 +95,10 @@ const username1 = ref('');
 const password = ref('');
 const password1 = ref('');
 
+
+const goToLogin = () => {
+  router.push('/login');
+}
 const createAccount = async () => {
     try{
         const formData =new FormData();
@@ -110,7 +120,6 @@ const createAccount = async () => {
         // Check if the account was created successfully
         if (response.status === 200) {
             console.log("Account created successfully!");
-            // Redirect to OTP page
             router.push({ name: 'OTP' });
         } else {
             console.error("Failed to create account.");

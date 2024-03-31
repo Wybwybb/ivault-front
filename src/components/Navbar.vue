@@ -88,17 +88,12 @@
 <script setup>
 import { ref } from 'vue';
 
-// Reactive variable to store the user's first name
 const firstName = ref('');
 
-// Function to update the user's first name after successful login
 const updateFirstName = (name) => {
   firstName.value = name;
 }
 
-// Assuming you have a function to handle login and retrieve user information
-// Once the user is successfully logged in, call the updateFirstName function with the user's first name
-// For example:
 updateFirstName('WybWybb');
 </script>
 

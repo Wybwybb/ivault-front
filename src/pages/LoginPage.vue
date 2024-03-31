@@ -80,9 +80,12 @@
               Don’t have an account yet?
               <a
                 href="#"
+                @click="goToSignUp"
                 class="font-medium text-primary-600 hover:underline dark:text-primary-500"
-                >Sign up</a
               >
+                Sign up
+              </a>
+              
             </p>
           </div>
         </div>
@@ -105,7 +108,9 @@ const router = useRouter();
 const username = ref();
 const password = ref();
 
-
+const goToSignUp = () => {
+  router.push('/signup');
+}
 const login = async () => {
   const response = await fetch (`http://localhost:8080/getUsers`);
   const data = await response.json();

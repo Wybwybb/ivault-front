@@ -22,7 +22,6 @@
           </div>
         </div>
         
-        <!-- Second column -->
         <div class="bg-dark bg-sky-100">
           <div class="p-6">
             <h1 class="text-lg font-bold mb-4">Account Details</h1>

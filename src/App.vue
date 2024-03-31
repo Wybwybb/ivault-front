@@ -1,13 +1,8 @@
 <template>
   <div>
-    <!-- Navigation Bar -->
     <Navbar />
-    
-    <!-- Router View to Render Page Components -->
     <router-view></router-view>
-    
-    <!-- Footer -->
-    <Footer />
+    <Footer ></Footer>
   </div>
 </template>
 
