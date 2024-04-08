@@ -1,11 +1,11 @@
 <template>
   <div
-    class="my-3 max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mr-4"
+    class="my-3 max-w-sm border rounded-lg shadow bg-gray-800 border-gray-700 mr-4 duration-500 hover:scale-105 hover:shadow-xl"
   >
     <div class="p-5">
       <a href="#">
         <h5
-          class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+          class="mb-2 text-2xl font-bold tracking-tight text-white"
           style="width: 300px; height: 90px;"
         >
           {{ props.name }}

@@ -1,8 +1,8 @@
 <template>
-    <section class="bg-gray-50 dark:bg-gray-900 min-h-screen flex items-center justify-center">
-        <div class="max-w-md mx-auto text-center dark:bg-gray-800 dark:border-gray-700 px-4 sm:px-8 py-10 rounded-xl shadow">
+    <section class="bg-gray-900 min-h-screen flex items-center justify-center">
+        <div class="max-w-md mx-auto text-center bg-gray-800 :border-gray-700 px-4 sm:px-8 py-10 rounded-xl shadow">
             <header class="mb-8">
-                <h1 class="text-2xl dark:text-white font-bold mb-1">Verification Code</h1>
+                <h1 class="text-2xl text-white font-bold mb-1">Verification Code</h1>
                 <p class="text-[15px] text-slate-500">Enter the 4-digit verification code that was sent to your phone number.</p>
             </header>
             <form id="otp-form" @submit.prevent="verifyAccount">

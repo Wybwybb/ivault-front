@@ -10,6 +10,7 @@ const AboutUs = () => import("./pages/AboutUs.vue");
 const Home1 = () => import("./pages/Home1.vue");
 const OTP = () => import("./pages/OTP.vue");
 const Profile = () => import("./pages/Profile.vue");
+const Subscription= () => import("./pages/Subscription.vue");
 
 const routes = [
   { path: "/home", component: Home },
@@ -21,6 +22,7 @@ const routes = [
   { path: "/home", component: Home1, meta: { auth: false } },
   { path: "/otp", component: OTP, meta: { auth: false } },
   { path: "/profile", component: Profile, meta: { auth: false } },
+  { path: "/subscription", component: Subscription, meta: { auth: false } },
 ];
 
 const router = createRouter({

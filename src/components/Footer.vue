@@ -7,7 +7,11 @@
           </div>
           <ul class="flex flex-wrap justify-center md:justify-end">
             <li>
-              <a href="#" class="text-sm text-gray-400 hover:text-gray-300 mx-3">About</a>
+              <router-link
+              to="/about"
+              class="text-sm text-gray-400 hover:text-gray-300 mx-3"
+              >About Us</router-link
+            >
             </li>
             <li>
               <a href="#" class="text-sm text-gray-400 hover:text-gray-300 mx-3">Privacy Policy</a>
