@@ -1,18 +1,19 @@
 <template>
-  <nav class="bg-gray-900 w-full z-20 top-0 start-0 border-b border-gray-600">
+  <nav
+    class="bg-gray-900 w-full top-0 start-0 border-b border-gray-600 sticky z-10"
+  >
     <div
-      class="max-w-screen-xl flex flex-row items-center justify-between mx-auto p-4 gap-10"
+      class="w-full flex flex-row items-center justify-between mx-auto p-4 gap-10"
     >
       <div class="w-[33%]">
         <img src="../assets/ILogo.png" class="h-12" alt="Your Logo" />
       </div>
-
       <div
-        class="w-[33%] items-center justify-center flex mx-auto md:flex md:w-auto md:order-1"
+        class="w-[33%] items-center justify-center flex mx-auto"
         id="navbar-sticky"
       >
         <ul
-          class="flex flex-col p-4 md:p-0 mt-4 font-medium border bg-gray-900 rounded-l md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+          class="flex items-center justify-center flex-col p-4 md:p-0 mt-4 font-medium border bg-gray-900 rounded-l md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
         >
           <li>
             <router-link
@@ -45,8 +46,8 @@
           </li>
         </ul>
       </div>
-      <div class="w-[33%] absolute left-[85%]">
-        <DropDown first-name="Marianne" />
+      <div class="w-[33%] items-center justify-center flex">
+        <DropDown first-name="Rybryb" />
       </div>
     </div>
   </nav>
