@@ -3,7 +3,7 @@
         <div class="relative">
             <div class="w-full max-w-sm rounded-lg shadow bg-gray-700 border-gray-700 overflow-hidden">
                 <!-- Avatar positioned on top of the card -->
-                <img class="w-24 h-24 rounded-full shadow-lg absolute -top-12" src="C:\Users\Marianne Leigh Reyes\Desktop\ambot\ivault-front\src\assets\pp.jpg" alt="Bonnie image"/>
+                <img class="w-20 h-20 rounded-full shadow-lg " src="../assets/pp.jpg" alt="Bonnie image"/>
                 <div class="flex justify-end px-4 pt-4">
                     <button id="dropdownButton" data-dropdown-toggle="dropdown" class="inline-block text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:ring-4 focus:outline-none focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-1.5" type="button">
                         <span class="sr-only">Open dropdown</span>

@@ -14,13 +14,12 @@ const Subscription= () => import("./pages/Subscription.vue");
 const Payments= () => import("./pages/Payments.vue");
 
 const routes = [
-  { path: "/home", component: Home },
   { path: "/login", component: Login, meta: { auth: false } },
   { path: "/signup", component: Signup, meta: { auth: false } },
   { path: "/landingpage", component: LandingPage, meta: { auth: true } },
   { path: "/about", component: AboutUs, meta: { auth: false } },
   { path: "/home1", component: Home1, meta: { auth: false } },
-  { path: "/home", component: Home1, meta: { auth: false } },
+  { path: "/home", component: Home, meta: { auth: false } },
   { path: "/otp", component: OTP, meta: { auth: false } },
   { path: "/profile", component: Profile, meta: { auth: false } },
   { path: "/subscription", component: Subscription, meta: { auth: false } },
