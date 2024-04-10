@@ -1,10 +1,11 @@
 <template>
   <header>
-    <section class="bg-gray-900 min-h-screen flex items-center justify-center">
-      <div class="bg-white rounded-lg shadow-md p-10 w-[50%] h-[70%] text-center">
+    <section class="bg-gray-900 min-h-screen p-20 flex items-center justify-center">
+      <div class="bg-gray-200 rounded-lg shadow-md p-10 w-[30rem] flex flex-col items-center">
+
         <!-- Avatar with Camera Button -->
-        <div class="relative inline-block">
-          <img class="w-20 h-20 rounded-full" src="C:\Users\Marianne Leigh Reyes\Desktop\ambot\ivault-front\src\assets\pp.jpg" alt="Rounded avatar">
+        <div class="relative mb-6">
+          <img class="w-28 h-28 rounded-full" src="C:\Users\Marianne Leigh Reyes\Desktop\ambot\ivault-front\src\assets\pp.jpg" alt="Rounded avatar">
 
           <!-- Camera Button -->
           <label for="avatar-upload" class="absolute bottom-0 right-0 bg-blue-500 rounded-full w-6 h-6 flex items-center justify-center cursor-pointer hover:bg-blue-700">
@@ -18,20 +19,33 @@
           <input id="avatar-upload" type="file" style="display: none;" @change="handleAvatarChange">
         </div>
 
-        <h1 class="text-lg pt-5 font-bold mb-4">Profile</h1>
-        
         <!-- Profile Information -->
-        <div class="mb-4">
-          <label for="website" class="block text-gray-700 font-bold mb-2">First Name: Marianne Leigh</label>
-        </div>
-        <div class="mb-4">
-          <label for="username" class="block text-gray-700 font-bold mb-2">Last Name: Reyes</label>
-        </div>
-        <div class="mb-4">
-          <label for="password" class="block text-gray-700 font-bold mb-2">Password: 0901293010</label>
+        <div class="text-left">
+          <h1 class="text-3xl font-bold mb-4">Profile</h1>
+          <div class="mb-4">
+            <label for="website" class="block text-gray-700 font-bold mb-2 text-lg">First Name: Marianne Leigh</label>
+          </div>
+          <div class="mb-4">
+            <label for="lastname" class="block text-gray-700 font-bold mb-2 text-lg">Last Name: Reyes</label>
+          </div>
+          <div class="mb-4">
+            <label for="contact" class="block text-gray-700 font-bold mb-2 text-lg">Contact Number: 1234 567 8910</label>
+          </div>
+          <div class="mb-4">
+            <label for="email" class="block text-gray-700 font-bold mb-2 text-lg">Email Address: Reyes</label>
+          </div>
+          <div class="mb-4">
+            <label for="username" class="block text-gray-700 font-bold mb-2 text-lg">Username: ambot sa kanding</label>
+          </div>
+          <div class="mb-4">
+            <label for="password" class="block text-gray-700 font-bold mb-2 text-lg">Password: *********</label> 
+          </div>
+          <div class="mb-4">
+            <label for="subscription" class="block text-gray-700 font-bold mb-2 text-lg pb-4">Subscription:</label> 
+          </div>
+          <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded text-lg">Update Profile</button>
         </div>
 
-        <button class="mt-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Update Profile</button>
       </div>
     </section>
   </header>

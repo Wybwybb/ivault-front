@@ -16,7 +16,7 @@
       <div
         class="card p-10 bg-white rounded-md shadow-md flex flex-col items-center duration-500 hover:scale-105 hover:shadow-xl"
       >
-        <img :src="pp" alt="Card 1 Logo" class="h-24 w-24 mb-4" />
+        <img :src="quality" alt="Card 1 Logo" class="h-24 w-24 mb-4" />
         <h3 class="text-lg font-bold mb-2 ite">Quality</h3>
         <p class="h-20">
           iVault ensures top-tier security through cutting-edge encryptionand
@@ -50,7 +50,7 @@
 <script setup>
 // Add any script setup if needed
 
-import pp from "../assets/pp.jpg";
+import quality from "../assets/quality1-removebg-preview.png";
 import integrity from "../assets/integrity-removebg-preview.png";
 import satisfaction from "../assets/satisfaction-removebg-preview.png";
 </script>
@@ -62,3 +62,4 @@ import satisfaction from "../assets/satisfaction-removebg-preview.png";
   width: fit-content;
 }
 </style>
+

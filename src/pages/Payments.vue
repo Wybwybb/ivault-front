@@ -1,40 +1,33 @@
 <template>
     <section class="bg-gray-900 flex justify-center items-center h-screen">
         <div class="relative">
-            <div class="w-full max-w-sm rounded-lg shadow bg-gray-700 border-gray-700 overflow-hidden">
-                <!-- Avatar positioned on top of the card -->
-                <img class="w-20 h-20 rounded-full shadow-lg " src="../assets/pp.jpg" alt="Bonnie image"/>
+            <div class="w-full max-w-lg rounded-lg shadow-lg bg-gray-700 border-gray-700 overflow-hidden pt-5 pb-5">
+                <!-- Avatar positioned at the top center of the card -->
+                <img class="w-20 h-20 rounded-full shadow-lg absolute -top-10 left-1/2 transform -translate-x-1/2" src="C:\Users\Marianne Leigh Reyes\Desktop\ambot\ivault-front\src\assets\image.png" alt="Bonnie image"/>
                 <div class="flex justify-end px-4 pt-4">
-                    <button id="dropdownButton" data-dropdown-toggle="dropdown" class="inline-block text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:ring-4 focus:outline-none focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-1.5" type="button">
-                        <span class="sr-only">Open dropdown</span>
-                        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 3">
-                            <path d="M2 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Zm6.041 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM14 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Z"/>
-                        </svg>
-                    </button>
-                    <!-- Dropdown menu -->
-                    <div id="dropdown" class="z-10 hidden text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
-                        <ul class="py-2" aria-labelledby="dropdownButton">
-                            <li>
-                                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Edit</a>
-                            </li>
-                            <li>
-                                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Export Data</a>
-                            </li>
-                            <li>
-                                <a href="#" class="block px-4 py-2 text-sm text-red-600 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Delete</a>
-                            </li>
-                        </ul>
-                    </div>
                 </div>
-                <div class="flex flex-col items-center pb-10">
-                    <h5 class="mb-1 text-xl font-medium text-gray-900 dark:text-white">Payment Method</h5>
-                    <span class="text-sm text-gray-500 dark:text-gray-400">Visual Designer</span>
-                    <div class="flex mt-4 md:mt-6">
-                        <a href="#" class="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add friend</a>
-                        <a href="#" class="py-2 px-4 ms-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Message</a>
+                <div class="px-5 py-8">
+                    <h5 class="mb-4 font-semibold text-white text-center">PAYMENT INFORMATION</h5>
+                    <h5 class="mb-4 font-semibold text-white text-start">Payment Method:</h5>
+                    <div>
+                        <div class="flex items-center mb-4">
+                            <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                            <label for="default-radio-1" class="ms-2 text-sm font-medium text-white">Gcash</label>
+                        </div>
+                        <div class="mb-4">
+                            <label for="card-number" class="block text-sm font-medium text-white mb-2">Name</label>
+                            <input type="text" name="card-number" id="card-number" placeholder="Enter Full Name" class="w-full py-4 px-10 border border-gray-400 rounded-lg focus:outline-none focus:border-blue-500">
+                        </div>
+                        <div class="mb-4">
+                            <label for="card-holder" class="block text-sm font-medium text-white mb-2">Mobile Number</label>
+                            <input type="text" name="card-holder" id="card-holder" placeholder="1234 567 8910" class="w-full py-4 px-10 border border-gray-400 rounded-lg focus:outline-none focus:border-blue-500">
+                        </div>
+                        </div>
+                    </div>
+                    <div class="flex justify-center">
+                        <button type="submit" class="bg-green-500 hover:bg-blue-600 text-white font-medium py-3 px-10 rounded-lg focus:outline-none">Submit</button>
                     </div>
                 </div>
             </div>
-        </div>
     </section>
-</template>
+ </template>
