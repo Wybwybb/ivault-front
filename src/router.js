@@ -11,7 +11,7 @@ const Home1 = () => import("./pages/Home1.vue");
 const OTP = () => import("./pages/OTP.vue");
 const Profile = () => import("./pages/Profile.vue");
 const Subscription= () => import("./pages/Subscription.vue");
-const Payments= () => import("./pages/Payments.vue");
+const Payments= () => import("./pages/Payment.vue");
 
 const routes = [
   { path: "/login", component: Login, meta: { auth: false } },

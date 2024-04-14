@@ -1,7 +1,7 @@
 <template>
   <header>
     <section class="bg-gray-900 min-h-screen p-20 flex items-center justify-center">
-      <div class="bg-gray-200 rounded-lg shadow-md p-10 w-[30rem] flex flex-col items-center">
+      <div class="bg-gray-800 rounded-lg shadow-md p-10 w-[30rem] flex flex-col items-center">
 
         <!-- Avatar with Camera Button -->
         <div class="relative mb-6">
@@ -21,29 +21,29 @@
 
         <!-- Profile Information -->
         <div class="text-left">
-          <h1 class="text-3xl font-bold mb-4">Profile</h1>
+          <h1 class="text-3xl text-white font-bold mb-4">Profile</h1>
           <div class="mb-4">
-            <label for="website" class="block text-gray-700 font-bold mb-2 text-lg">First Name: Marianne Leigh</label>
+            <label for="website" class="block text-white font-bold mb-2 text-lg">First Name: Marianne Leigh</label>
           </div>
           <div class="mb-4">
-            <label for="lastname" class="block text-gray-700 font-bold mb-2 text-lg">Last Name: Reyes</label>
+            <label for="lastname" class="block text-white font-bold mb-2 text-lg">Last Name: Reyes</label>
           </div>
           <div class="mb-4">
-            <label for="contact" class="block text-gray-700 font-bold mb-2 text-lg">Contact Number: 1234 567 8910</label>
+            <label for="contact" class="block text-white font-bold mb-2 text-lg">Contact Number: 1234 567 8910</label>
           </div>
           <div class="mb-4">
-            <label for="email" class="block text-gray-700 font-bold mb-2 text-lg">Email Address: Reyes</label>
+            <label for="email" class="block text-white font-bold mb-2 text-lg">Email Address: Reyes</label>
           </div>
           <div class="mb-4">
-            <label for="username" class="block text-gray-700 font-bold mb-2 text-lg">Username: ambot sa kanding</label>
+            <label for="username" class="block text-white font-bold mb-2 text-lg">Username: ambot sa kanding</label>
           </div>
           <div class="mb-4">
-            <label for="password" class="block text-gray-700 font-bold mb-2 text-lg">Password: *********</label> 
+            <label for="password" class="block text-white font-bold mb-2 text-lg">Password: *********</label> 
           </div>
           <div class="mb-4">
-            <label for="subscription" class="block text-gray-700 font-bold mb-2 text-lg pb-4">Subscription:</label> 
+            <label for="subscription" class="block text-white font-bold mb-2 text-lg pb-4">Subscription:</label> 
           </div>
-          <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded text-lg">Update Profile</button>
+          <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded text-lg duration-500 hover:scale-105 hover:shadow-xl">Update Profile</button>
         </div>
 
       </div>

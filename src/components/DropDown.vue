@@ -123,19 +123,17 @@
               >
         </li>
         <li>
-          <a
-            href="#"
-            class="block px-4 py-2 hover:bg-gray-600 dark:hover:text-white"
-            >Settings</a
-          >
+          <router-link
+          to="/home1"
+          class="block px-4 py-2 hover:bg-gray-600"
+          >Dashboard</router-link
+        >
         </li>
-        <li>
-          <a
-            href="#"
-            class="block px-4 py-2 hover:bg-gray-600 dark:hover:text-white"
-            >Earnings</a
-          >
-        </li>
+        <router-link
+                to="/subscription"
+                class="block px-4 py-2 hover:bg-gray-600"
+                >Subscription</router-link
+              >
         <li>
           <a
             href="#"

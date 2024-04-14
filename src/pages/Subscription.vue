@@ -2,7 +2,7 @@
   <section class="bg-gray-900 p-10 flex justify-center h-screen">
     <!-- Non-Pro Plan Card -->
     <div
-      class="w-full h-[73%] max-w-sm p-4 border border-gray-200 rounded-lg shadow sm:p-8 bg-gray-800 duration-500 hover:scale-105 hover:shadow-xl mr-4"
+      class="w-full h-[89%] max-w-sm p-4 rounded-lg shadow sm:p-8 bg-gray-800 duration-500 hover:scale-105 hover:shadow-xl mr-4"
     >
       <h5 class="mb-4 text-xl font-medium text-gray-500 dark:text-gray-400">
         Non-Pro Plan (Free)
@@ -153,7 +153,7 @@
 
     <!-- Standard Plan Card -->
     <div
-      class="w-full h-[73%] max-w-sm p-4 rounded-lg shadow sm:p-8 bg-gray-800 border-gray-700 duration-500 hover:scale-105 hover:shadow-xl"
+      class="w-full h-[89%] max-w-sm p-4 rounded-lg shadow sm:p-8 bg-gray-800 border-gray-700 duration-500 hover:scale-105 hover:shadow-xl"
     >
       <h5 class="mb-4 text-xl font-medium text-gray-500">Standard plan</h5>
       <div class="flex items-baseline text-gray-300">
@@ -310,7 +310,5 @@
 </template>
 
 <style scoped>
-.shadow-custom {
-  box-shadow: 0 4px 6px rgb(153, 50, 50); /* Customize the color and opacity here */
-}
+
 </style>

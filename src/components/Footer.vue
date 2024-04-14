@@ -13,15 +13,20 @@
               >About Us</router-link
             >
             </li>
+            <a
+                href="https://www.freeprivacypolicy.com/live/5e4d5f7e-6fb4-4bc3-b331-bfd83072100d"
+                target="_blank" rel="noopener noreferrer"
+                class="text-sm text-gray-400 hover:text-gray-300 mx-3"
+              >
+                Privacy Policy
+              </a>
             <li>
-              <a href="#" class="text-sm text-gray-400 hover:text-gray-300 mx-3">Privacy Policy</a>
+              <router-link
+              to="/payments"
+              class="text-sm text-gray-400 hover:text-gray-300 mx-3"
+              >Payments</router-link
+            >
             </li>
-            <li>
-              <a href="#" class="text-sm text-gray-400 hover:text-gray-300 mx-3">Licensing</a>
-            </li>
-            <li>
-              <a href="#" class="text-sm text-gray-400 hover:text-gray-300 mx-3">Contact</a>
-            </li> 
           </ul>
         </div>
       </div>
