@@ -14,8 +14,8 @@ const Subscription= () => import("./pages/Subscription.vue");
 const Payments= () => import("./pages/Payment.vue");
 
 const routes = [
-  { path: "/login", component: Login, meta: { auth: false } },
-  { path: "/signup", component: Signup, meta: { auth: false } },
+  { name:'Login',path: "/login", component: Login, meta: { auth: false } },
+  { name:'Signup',path: "/signup", component: Signup, meta: { auth: false } },
   { path: "/landingpage", component: LandingPage, meta: { auth: true } },
   { path: "/about", component: AboutUs, meta: { auth: false } },
   { path: "/home1", component: Home1, meta: { auth: false } },

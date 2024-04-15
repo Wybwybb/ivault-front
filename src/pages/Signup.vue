@@ -3,7 +3,9 @@
       <div class="flex flex-col items-center justify-center px-6 py-8 mx-auto md:w-screen lg:py-0">
           <div class="w-full  rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 bg-gray-800 border-gray-700">
               <div class="p-6 space-y-4 md:space-y-6 sm:p-8">
-                  <h1 class="text-xl font-bold leading-tight tracking-tight md:text-2xl text-white">
+                <img src="c:\Users\Marianne Leigh Reyes\Desktop\ambot\ivault-front\src\assets\ILogo.png" alt="Logo" class="w-18 h-20 mx-auto mb-4">
+
+                  <h1 class="text-3xl font-bold leading-tight tracking-tight md:text-2xl text-center pb-4 text-white">
                       Sign Up
                   </h1>
                   <form class="space-y-4 md:space-y-6" action="#">
