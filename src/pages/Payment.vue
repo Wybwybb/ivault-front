@@ -3,7 +3,7 @@
         <div class="relative">
             <div class="w-full max-w-lg rounded-lg shadow-lg bg-gray-700 border-gray-700 overflow-hidden pt-5 pb-5">
                 <!-- Avatar positioned at the top center of the card -->
-                <img class="w-20 h-20 rounded-full shadow-lg absolute -top-10 left-1/2 transform -translate-x-1/2" src="C:\Users\Marianne Leigh Reyes\Desktop\ambot\ivault-front\src\assets\image.png" alt="Bonnie image"/>
+                <img class="w-20 h-20 rounded-full shadow-lg absolute -top-10 left-1/2 transform -translate-x-1/2" src="C:\Users\PC\Desktop\Ivault\ivault-front\src\assets\image.png" alt="Bonnie image"/>
                 <div class="flex justify-end px-4 pt-4">
                 </div>
                 <div class="px-5 py-8">

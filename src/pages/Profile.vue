@@ -5,7 +5,7 @@
 
         <!-- Avatar with Camera Button -->
         <div class="relative mb-6">
-          <img class="w-28 h-28 rounded-full" src="C:\Users\Marianne Leigh Reyes\Desktop\ambot\ivault-front\src\assets\pp.jpg" alt="Rounded avatar">
+          <img class="w-28 h-28 rounded-full" src="C:\Users\PC\Desktop\Ivault\ivault-front\src\assets\pp.jpg" alt="Rounded avatar">
 
           <!-- Camera Button -->
           <label for="avatar-upload" class="absolute bottom-0 right-0 bg-blue-500 rounded-full w-6 h-6 flex items-center justify-center cursor-pointer hover:bg-blue-700">

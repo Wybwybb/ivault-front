@@ -30,7 +30,7 @@
                         Account</button>
                 </div>
             </form>
-            <div class="text-sm text-slate-500 mt-4">Didn't receive code? <a class="font-medium text-indigo-500 hover:text-indigo-600" href="#0">Resend</a></div>
+            <div class="text-sm text-slate-500 mt-4">Didn't receive code? <a @click.prevent="resendCode" class="font-medium text-indigo-500 hover:text-indigo-600" href="#0">Resend</a></div>
         </div>
     </section>
 </template>
@@ -42,5 +42,10 @@ const router = useRouter();
 
 const verifyAccount = () => {
     router.push({ name: 'home' });
+}
+
+const resendCode = () => {
+    // Show prompt message for resend
+    alert("Verification code resent!");
 }
 </script>
