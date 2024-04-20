@@ -1,7 +1,7 @@
 <template>
   <div class="bg-gray-900 flex justify-center items-center min-h-screen">
     <div class="container mx-auto py-8">
-      <h1 class="text-3xl font-semibold my-5 text-white">Recently Accessed Accounts</h1>
+      <h1 class="text-3xl font-semibold my-5 text-white">Personal Vaults</h1>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
         <Card v-for="(card, index) in cards" :key="index" :name="card.name" @click="openDeleteCardModal(index)" />
       </div>
