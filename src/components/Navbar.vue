@@ -25,16 +25,9 @@
           </li>
           <li>
             <router-link
-              to="/about"
+              to="/profile"
               class="block py-2 px-3 rounded md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-              >About Us</router-link
-            >
-          </li>
-          <li>
-            <router-link
-              to="/signup"
-              class="block py-2 px-3 rounded md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-              >Sign up</router-link
+              >Profile</router-link
             >
           </li>
           <li>
@@ -44,37 +37,55 @@
               >Subscription</router-link
             >
           </li>
+          <li>
+            <router-link
+              to="/about"
+              class="block py-2 px-3 rounded md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+              >About Us</router-link
+            >
+          </li>
         </ul>
 
       </div>
       <div class="w-[33%] items-center justify-center flex">
-        <DropDown first-name="Rybryb" />
+        <DropDown :first-name="name" />
       </div>
     </div>
   </nav>
 </template>
 
 <script setup>
+import {ref} from "vue"
 import DropDown from "./DropDown.vue";
-import { ref } from "vue";
+import {useRouter} from "vue-router"
 
-import { onMounted } from "vue";
-import { initFlowbite } from "flowbite";
+const name = ref();
+const router = useRouter();
 
-// initialize components based on data attribute selectors
-onMounted(() => {
-  initFlowbite();
-});
+const verifyLogin = () => {
+  if(localStorage.getItem("user_id")){
 
-const isDropdownOpen = ref(false);
+  }
+  else{
+    router.push("/login");
+  }
+}
+verifyLogin();
 
-const firstName = ref("");
+const getCurrent = async () => {
+  try{
+    const response = await fetch(`http://localhost:8080/getUserByID/${localStorage.getItem("user_id")}`);
+    const data = await response.json();
+    name.value = data[0].first_name
+  }
+  catch(error){
+    console.log(error)
+    // alert(error);
+  }
+}
+getCurrent();
 
-const updateFirstName = (name) => {
-  firstName.value = name;
-};
 
-updateFirstName("WybWybb");
+
 </script>
 
-<style scoped></style>

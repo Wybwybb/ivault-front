@@ -1,4 +1,5 @@
 <template>
+
   <section class="bg-gray-900">
     <div
       class="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0"
@@ -15,6 +16,11 @@
           >
             LOGIN
           </h1>
+          <h1
+          class="text-xl font-bold leading-tight tracking-tight text-center md:text-3xl text-red-500"
+        >
+          {{ errorMessage }}
+        </h1>
           <div class="space-y-4 md:space-y-6" action="#">
             <div>
               <label
@@ -73,7 +79,7 @@
               type="submit"
               class="w-full text-white bg-blue-600 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
             >
-              Sign in
+              Login
             </button>
             <p class="text-sm font-light text-gray-500 dark:text-gray-400">
               Don’t have an account yet?
@@ -96,35 +102,46 @@
 <script setup>
 import { ref, onMounted} from "vue";
 import {useRouter} from "vue-router";
-onMounted(()=>{
-login();
 
-});
 
 const router = useRouter();
 
 
 const username = ref();
 const password = ref();
+const errorMessage = ref();
 
 const goToSignUp = () => {
   router.push('/signup');
 }
 const login = async () => {
-  const response = await fetch (`http://localhost:8080/getUsers`);
-  const data = await response.json();
-  
-  for(var i = 0 ;  i < data.length; i ++){
-    if(data[i].username==username.value){
-      if(data[i].password == password.value){
-        router.push("/Home");
+  try{
+    const response = await fetch('http://localhost:8080/getUsers');
+    const data = await response.json();
+
+    for(var i = 0 ; i <data.length ; i++){
+      if(username.value == data[i].username){
+        
+        if(password.value == data[i].password){
+
+          localStorage.setItem('user_id',data[i].user_id);
+          console.log(localStorage.getItem("user_id"))
+          router.push("/home");
+          return;
+        }
+        else{
+          errorMessage.value = "Wrong Credentials"
+        }
       }
-      break;
-    }
-    else{
-      console.log("bad loginbrah!");
+      else{
+        errorMessage.value = "Wrong Credentials"
+      }
     }
   }
+  catch(error){
+    alert(error);
+  }
+
 }
 
 

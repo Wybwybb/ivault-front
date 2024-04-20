@@ -5,7 +5,8 @@
 
         <!-- Avatar with Camera Button -->
         <div class="relative mb-6">
-          <img class="w-28 h-28 rounded-full" src="C:\Users\PC\Desktop\Ivault\ivault-front\src\assets\pp.jpg" alt="Rounded avatar">
+          <img class="w-28 h-28 rounded-full" 
+          :src="profile_picture" alt="Rounded avatar">
 
           <!-- Camera Button -->
           <label for="avatar-upload" class="absolute bottom-0 right-0 bg-blue-500 rounded-full w-6 h-6 flex items-center justify-center cursor-pointer hover:bg-blue-700">
@@ -23,25 +24,25 @@
         <div class="text-left">
           <h1 class="text-3xl text-white font-bold mb-4">Profile</h1>
           <div class="mb-4">
-            <label for="website" class="block text-white font-bold mb-2 text-lg">First Name: Marianne Leigh</label>
+            <label for="website" class="block text-white font-bold mb-2 text-lg">First Name: {{first_name}}</label>
           </div>
           <div class="mb-4">
-            <label for="lastname" class="block text-white font-bold mb-2 text-lg">Last Name: Reyes</label>
+            <label for="lastname" class="block text-white font-bold mb-2 text-lg">Last Name: {{last_name}}</label>
           </div>
           <div class="mb-4">
-            <label for="contact" class="block text-white font-bold mb-2 text-lg">Contact Number: 1234 567 8910</label>
+            <label for="contact" class="block text-white font-bold mb-2 text-lg">Contact Number:{{ contact_number }} </label>
           </div>
           <div class="mb-4">
-            <label for="email" class="block text-white font-bold mb-2 text-lg">Email Address: Reyes</label>
+            <label for="email" class="block text-white font-bold mb-2 text-lg">Email Address: {{email}}</label>
           </div>
           <div class="mb-4">
-            <label for="username" class="block text-white font-bold mb-2 text-lg">Username: ambot sa kanding</label>
+            <label for="username" class="block text-white font-bold mb-2 text-lg">Username: {{username}}</label>
           </div>
           <div class="mb-4">
             <label for="password" class="block text-white font-bold mb-2 text-lg">Password: *********</label> 
           </div>
           <div class="mb-4">
-            <label for="subscription" class="block text-white font-bold mb-2 text-lg pb-4">Subscription:</label> 
+            <label for="subscription" class="block text-white font-bold mb-2 text-lg pb-4">Subscription: Standard Plan</label> 
           </div>
           <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded text-lg duration-500 hover:scale-105 hover:shadow-xl">Update Profile</button>
         </div>
@@ -51,21 +52,56 @@
   </header>
 </template>
 
-<script>
-export default {
-  methods: {
-    handleAvatarChange(event) {
-      const file = event.target.files[0];
-      if (file) {
-        // Handle the file upload logic here (e.g., display new avatar)
-        console.log('Selected File:', file);
-        // You can implement further logic to update the avatar image
-      }
-    }
+<script setup>
+import {ref,onMounted} from "vue";
+
+onMounted(()=>{
+  getProfile();
+});
+
+const first_name = ref();
+const last_name = ref();
+const contact_number = ref();
+const email = ref();
+const username = ref();
+const password = ref();
+const profile_picture = ref(null);
+
+const getProfile = async () =>{
+  try{
+    const response = await fetch(`http://localhost:8080/getUserByID/${localStorage.getItem('user_id')}`)
+    const data = await response.json();
+
+    first_name.value = data[0].first_name;
+    last_name.value = data[0].last_name;
+    contact_number.value = data[0].contact_number;
+    email.value = data[0].email;
+    username.value = data[0].username;
+    password.value = data[0].password;
+    profile_picture.value = await convertBlob(data[0].profile_picture.data);
   }
-};
+  catch(error){
+    console.log(error);
+  }
+
+}
+getProfile();
+
+
+const convertBlob = (image) => {
+      return new Promise((resolve, reject) => {
+        if (image) {
+          const blob = new Blob([new Uint8Array(image)], { type: "image/jpeg" });
+          const reader = new FileReader();
+          reader.readAsDataURL(blob);
+          reader.onloadend = () => {
+            const dataURL = reader.result;
+            resolve(dataURL);
+          };
+        }
+      });
+    };
+
 </script>
 
-<style>
-/* Add your custom styles here */
-</style>
+

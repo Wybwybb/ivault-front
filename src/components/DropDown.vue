@@ -123,11 +123,7 @@
               >
         </li>
         <li>
-          <router-link
-          to="/home1"
-          class="block px-4 py-2 hover:bg-gray-600"
-          >Dashboard</router-link
-        >
+          <a href="https://www.freeprivacypolicy.com/live/5e4d5f7e-6fb4-4bc3-b331-bfd83072100d" target="_blank" rel="noopener noreferrer" class="block px-4 py-2 hover:bg-gray-600">Privacy Policy</a>
         </li>
         <router-link
                 to="/subscription"
@@ -135,8 +131,7 @@
                 >Subscription</router-link
               >
         <li>
-          <a
-            href="#"
+          <a @click="signout"
             class="block px-4 py-2 hover:bg-gray-600 dark:hover:text-white"
             >Sign out</a
           >
@@ -151,13 +146,13 @@ import { initFlowbite } from "flowbite";
 defineProps({
   firstName: String,
 });
-
-// initialize components based on data attribute selectors
 onMounted(() => {
   initFlowbite();
-
-defineProps({
-  firstName:String,
-})
 });
+
+const signout = () => {
+  localStorage.clear();
+
+  window.location.reload();
+}
 </script>

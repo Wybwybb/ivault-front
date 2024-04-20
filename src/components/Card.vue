@@ -40,13 +40,9 @@
 </template>
 
 <script setup>
-import { useRouter } from 'vue-router';
 
-const router = useRouter();
 
-const viewAccounts = () => {
-  router.push('/home1');
-}
+
 
 const props = defineProps({
   name: String,

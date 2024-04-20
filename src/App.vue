@@ -15,6 +15,3 @@ const route = useRoute();
 
 </script>
 
-<style scoped>
-/* Any scoped styles specific to App.vue can go here */
-</style>

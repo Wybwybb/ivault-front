@@ -3,7 +3,7 @@
         <div class="max-w-md mx-auto text-center bg-gray-800 :border-gray-700 px-4 sm:px-8 py-10 rounded-xl shadow">
             <header class="mb-8">
                 <h1 class="text-2xl text-white font-bold mb-1">Verification Code</h1>
-                <p class="text-[15px] text-slate-500">Enter the 4-digit verification code that was sent to your phone number.</p>
+                <p class="text-[15px] text-slate-500">Enter the 4-digit verification code that was sent to your Email.</p>
             </header>
             <form id="otp-form" @submit.prevent="verifyAccount">
                 <div class="flex items-center justify-center gap-3">
