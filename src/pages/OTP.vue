@@ -45,7 +45,6 @@ const verifyAccount = () => {
 }
 
 const resendCode = () => {
-    // Show prompt message for resend
     alert("Verification code resent!");
 }
 </script>

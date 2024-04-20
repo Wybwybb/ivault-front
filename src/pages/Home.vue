@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-gray-900">
+  <div class="bg-gray-900 flex justify-center items-center min-h-screen">
     <div class="container mx-auto py-8">
       <h1 class="text-3xl font-semibold my-5 text-white">Recently Accessed Accounts</h1>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
@@ -73,11 +73,14 @@ const closeDeleteCardModal = () => {
 };
 
 const deleteCard = () => {
-  if (selectedCardIndex.value !== -1) {
+  if (cards.value.length === 1) {
+    cards.value = [];
+  } else if (selectedCardIndex.value !== -1) {
     cards.value.splice(selectedCardIndex.value, 1);
-    closeDeleteCardModal();
   }
+  closeDeleteCardModal();
 };
+
 </script>
 
 <style scoped>

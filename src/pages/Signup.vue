@@ -58,7 +58,7 @@
                         <input type="password" name="password1" id="password1" placeholder="••••••••" class="sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 bg-gray-700 border-gray-600 placeholder-gray-400 text-white" v-model="password1" required>
                     </div>
                     
-                      <button @click="createAccount" class="w-full bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 focus:outline-none">
+                    <button @click="sendVerificationCode" class="w-full bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 focus:outline-none">
                         Send Verification Code
                       </button>
                       <p class="text-center text-sm font-light text-gray-300">
@@ -98,6 +98,7 @@ const password1 = ref('');
 const goToLogin = () => {
   router.push('/login');
 }
+const sendVerificationCode = async () => {
 const createAccount = async () => {
     try{
 
@@ -131,6 +132,8 @@ const createAccount = async () => {
     catch(error){
         console.log("Error: ",error);
     }
+}
+router.push('/otp');
 }
 
 const onContactNumberInput = () => {

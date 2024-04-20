@@ -65,11 +65,8 @@
                   >
                 </div>
               </div>
-              <a
-                href="#"
-                class="text-sm font-medium text-gray-400 hover:underline dark:text-primary-500"
-                >Forgot password?</a
-              >
+              <!-- Add router link to Forgot password -->
+              <router-link to="/forgotpass" class="text-sm font-medium text-gray-400 hover:underline dark:text-primary-500">Forgot password?</router-link>
             </div>
             <button
             @click="login"

@@ -12,6 +12,7 @@ const OTP = () => import("./pages/OTP.vue");
 const Profile = () => import("./pages/Profile.vue");
 const Subscription= () => import("./pages/Subscription.vue");
 const Payments= () => import("./pages/Payment.vue");
+const ForgotPass= () => import("./pages/ForgotPass.vue");
 
 const routes = [
   { name:'Login',path: "/login", component: Login, meta: { auth: false } },
@@ -24,6 +25,7 @@ const routes = [
   { path: "/profile", component: Profile, meta: { auth: false } },
   { path: "/subscription", component: Subscription, meta: { auth: false } },
   { path: "/payments", component: Payments, meta: { auth: false } },
+  { path: "/forgotpass", component: ForgotPass, meta: { auth: false } },
 ];
 
 const router = createRouter({

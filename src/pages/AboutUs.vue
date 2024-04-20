@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-gray-900 items-start p-5 pl-11">
+  <div class="bg-gray-900 items-start p-5 pl-11 min-h-screen">
     <h1 class="text-4xl text-white text-center p-7">Our Mission</h1>
     <h2
       class="text-2xl text-white mb-4 justify-evenly text-center p-4 pb-24 duration-500 hover:scale-105 hover:shadow-xl"
@@ -62,4 +62,3 @@ import satisfaction from "../assets/satisfaction-removebg-preview.png";
   width: fit-content;
 }
 </style>
-
