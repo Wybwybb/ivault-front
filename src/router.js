@@ -13,7 +13,8 @@ const Profile = () => import("./pages/Profile.vue");
 const Subscription= () => import("./pages/Subscription.vue");
 const Payments= () => import("./pages/Payment.vue");
 const ForgotPass= () => import("./pages/ForgotPass.vue");
-
+const Tools= () => import("./pages/Tools.vue");
+ 
 const routes = [
   { name:'Login',path: "/login", component: Login, meta: { auth: false } },
   { name:'Signup',path: "/signup", component: Signup, meta: { auth: false } },
@@ -26,6 +27,7 @@ const routes = [
   { path: "/subscription", component: Subscription, meta: { auth: false } },
   { path: "/payments", component: Payments, meta: { auth: false } },
   { path: "/forgotpass", component: ForgotPass, meta: { auth: false } },
+  { path: "/tools", component: Tools, meta: { auth: false } },
 ];
 
 const router = createRouter({

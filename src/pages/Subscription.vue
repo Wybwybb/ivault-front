@@ -1,314 +1,153 @@
-<template>
-  <section class="bg-gray-900 p-10 flex justify-center h-screen">
-    <!-- Non-Pro Plan Card -->
-    <div
-      class="w-full h-[89%] max-w-sm p-4 rounded-lg shadow sm:p-8 bg-gray-800 duration-500 hover:scale-105 hover:shadow-xl mr-4"
-    >
-      <h5 class="mb-4 text-xl font-medium text-gray-500 dark:text-gray-400">
-        Non-Pro Plan (Free)
-      </h5>
-      <div class="flex items-baseline text-gray-300">
-        <span class="text-5xl font-extrabold tracking-tight">Free</span>
-      </div>
-      <ul role="list" class="space-y-5 my-7">
-        <li class="flex items-center">
-          <svg
-            class="flex-shrink-0 w-4 h-4 text-blue-700 dark:text-blue-500"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-          >
-            <path
-              d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"
-            />
-          </svg>
-          <span
-            class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400 ms-3"
-            >Browser Extension</span
-          >
-        </li>
-        <li class="flex">
-          <svg
-            class="flex-shrink-0 w-4 h-4 text-blue-700 dark:text-blue-500"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-          >
-            <path
-              d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"
-            />
-          </svg>
-          <span
-            class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400 ms-3"
-            >Autofill</span
-          >
-        </li>
-        <li class="flex">
-          <svg
-            class="flex-shrink-0 w-4 h-4 text-blue-700 dark:text-blue-500"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-          >
-            <path
-              d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"
-            />
-          </svg>
-          <span
-            class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400 ms-3"
-            >Card</span
-          >
-        </li>
-        <li class="flex line-through decoration-gray-500">
-          <svg
-            class="flex-shrink-0 w-4 h-4 text-gray-400 dark:text-gray-500"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-          >
-            <path
-              d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"
-            />
-          </svg>
-          <span class="text-base font-normal leading-tight text-gray-500 ms-3"
-            >Unlimited Account</span
-          >
-        </li>
-        <li class="flex line-through decoration-gray-500">
-          <svg
-            class="flex-shrink-0 w-4 h-4 text-gray-400 dark:text-gray-500"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-          >
-            <path
-              d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"
-            />
-          </svg>
-          <span class="text-base font-normal leading-tight text-gray-500 ms-3"
-            >Categorization</span
-          >
-        </li>
-        <li class="flex line-through decoration-gray-500">
-          <svg
-            class="flex-shrink-0 w-4 h-4 text-gray-400 dark:text-gray-500"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-          >
-            <path
-              d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"
-            />
-          </svg>
-          <span class="text-base font-normal leading-tight text-gray-500 ms-3"
-            >Passwrod Generator</span
-          >
-        </li>
-        <li class="flex line-through decoration-gray-500">
-          <svg
-            class="flex-shrink-0 w-4 h-4 text-gray-400 dark:text-gray-500"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-          >
-            <path
-              d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"
-            />
-          </svg>
-          <span class="text-base font-normal leading-tight text-gray-500 ms-3"
-            >Password Health Checkup</span
-          >
-        </li>
-        <li class="flex line-through decoration-gray-500">
-          <svg
-            class="flex-shrink-0 w-4 h-4 text-gray-400 dark:text-gray-500"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-          >
-            <path
-              d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"
-            />
-          </svg>
-          <span class="text-base font-normal leading-tight text-gray-500 ms-3"
-            >Multi-Factor Authentication</span
-          >
-        </li>
-      </ul>
-      <button
-        type="button"
-        class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-200 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-900 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center"
-      >
-        Free
-      </button>
-    </div>
 
-    <!-- Standard Plan Card -->
-    <div
-      class="w-full h-[89%] max-w-sm p-4 rounded-lg shadow sm:p-8 bg-gray-800 border-gray-700 duration-500 hover:scale-105 hover:shadow-xl"
-    >
-      <h5 class="mb-4 text-xl font-medium text-gray-500">Standard plan</h5>
-      <div class="flex items-baseline text-gray-300">
-        <span class="text-3xl font-semibold">$</span>
-        <span class="text-5xl font-extrabold tracking-tight">49</span>
-        <span class="ms-1 text-xl font-normal text-gray-300">/month</span>
+<template>
+  <section class="bg-gray-900 p-10 flex justify-center items-center h-screen">
+    <div class="card-container flex gap-4">
+      <!-- Non-Pro Plan Card -->
+      <div class="card bg-gray-800 hover:scale-105 transition-transform duration-300">
+        <h5 class="card-title">Non-Pro Plan (Free)</h5>
+        <p class="card-price">Free</p>
+        <ul class="feature-list">
+          <li class="feature included">Browser Extension</li>
+          <li class="feature included">Autofill</li>
+          <li class="feature included">Card</li>
+          <li class="feature not-included">Unlimited Account</li>
+          <li class="feature not-included">Categorization</li>
+          <li class="feature not-included">Password Generator</li>
+          <li class="feature not-included">Password Health Checkup</li>
+        </ul>
+        <button
+          type="button"
+          class="cta-button"
+          @click="redirectToPaymentPage"
+        >
+          Free
+        </button>
+
       </div>
-      <ul role="list" class="space-y-5 my-7">
-        <li class="flex items-center">
-          <svg
-            class="flex-shrink-0 w-4 h-4 text-blue-700 dark:text-blue-500"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-          >
-            <path
-              d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"
-            />
-          </svg>
-          <span
-            class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400 ms-3"
-            >Browser Extension</span
-          >
-        </li>
-        <li class="flex">
-          <svg
-            class="flex-shrink-0 w-4 h-4 text-blue-700 dark:text-blue-500"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-          >
-            <path
-              d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"
-            />
-          </svg>
-          <span
-            class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400 ms-3"
-            >Autofill</span
-          >
-        </li>
-        <li class="flex">
-          <svg
-            class="flex-shrink-0 w-4 h-4 text-blue-700 dark:text-blue-500"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-          >
-            <path
-              d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"
-            />
-          </svg>
-          <span
-            class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400 ms-3"
-            >Card</span
-          >
-        </li>
-        <li class="flex">
-          <svg
-            class="flex-shrink-0 w-4 h-4 text-blue-700 dark:text-blue-500"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-          >
-            <path
-              d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"
-            />
-          </svg>
-          <span
-            class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400 ms-3"
-            >Unlimited Account</span
-          >
-        </li>
-        <li class="flex">
-          <svg
-            class="flex-shrink-0 w-4 h-4 text-blue-700 dark:text-blue-500"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-          >
-            <path
-              d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"
-            />
-          </svg>
-          <span
-            class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400 ms-3"
-            >Categorization</span
-          >
-        </li>
-        <li class="flex">
-          <svg
-            class="flex-shrink-0 w-4 h-4 text-blue-700 dark:text-blue-500"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-          >
-            <path
-              d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"
-            />
-          </svg>
-          <span
-            class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400 ms-3"
-            >Password Generator</span
-          >
-        </li>
-        <li class="flex">
-          <svg
-            class="flex-shrink-0 w-4 h-4 text-blue-700 dark:text-blue-500"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-          >
-            <path
-              d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"
-            />
-          </svg>
-          <span
-            class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400 ms-3"
-            >Password Health Checkup</span
-          >
-        </li>
-        <li class="flex">
-          <svg
-            class="flex-shrink-0 w-4 h-4 text-blue-700 dark:text-blue-500"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-          >
-            <path
-              d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"
-            />
-          </svg>
-          <span
-            class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400 ms-3"
-            >Multi-Factor Authentication</span
-          >
-        </li>
-      </ul>
-      <button
-        type="button"
-        class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-200 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-900 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center"
-      >
-        Active Plan
-      </button>
+      
+      <!-- Standard Plan Card -->
+      <div class="card bg-gray-800 hover:scale-105 transition-transform duration-300">
+        <h5 class="card-title">Standard Plan</h5>
+        <p class="card-price">₱99 <span>/month</span></p>
+        <ul class="feature-list">
+          <li class="feature included">Browser Extension</li>
+          <li class="feature included">Autofill</li>
+          <li class="feature included">Card</li>
+          <li class="feature included">Unlimited Account</li>
+          <li class="feature included">Categorization</li>
+          <li class="feature included">Password Generator</li>
+          <li class="feature included">Password Health Checkup</li>
+        </ul>
+        <button
+          type="button"
+          class="cta-button"
+          @click="redirectToPaymentPage"
+        >
+          Activate Plan
+        </button>
+
+      </div>
     </div>
   </section>
 </template>
 
-<style scoped>
+<script>
+export default {
+  methods: {
+    redirectToPaymentPage() {
+      this.$router.push({ name: 'payments' });
+    }
+  }
+}
+</script>
 
+<style scoped>
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.card {
+  flex: 1;
+  padding: 3rem;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #2D3748;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-title {
+  font-size: 2rem;
+  color: #E2E8F0;
+  margin-bottom: 1rem;
+}
+
+.card-price {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #F7FAFC;
+}
+
+.card-price span {
+  font-size: 1.25rem;
+}
+
+.feature-list {
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  color: #CBD5E1;
+  text-decoration: line-through;
+}
+
+.feature.included {
+  text-decoration: none;
+}
+
+.feature.included::before,
+.feature.not-included::before {
+  margin-right: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.feature.included::before {
+  content: "✔";
+  color: #10b981;
+}
+
+.feature.not-included::before {
+  content: "✘";
+  color: #ef4444;
+}
+
+.cta-button {
+  background-color: #2563eb;
+  color: white;
+  padding: 1rem 2.5rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #1d4ed8;
+  transform: translateY(-3px);
+}
 </style>

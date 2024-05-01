@@ -123,6 +123,13 @@
               >
         </li>
         <li>
+          <router-link
+                to="/tools"
+                class="block px-4 py-2 hover:bg-gray-600"
+                >Tools</router-link
+              >
+        </li>
+        <li>
           <a href="https://www.freeprivacypolicy.com/live/5e4d5f7e-6fb4-4bc3-b331-bfd83072100d" target="_blank" rel="noopener noreferrer" class="block px-4 py-2 hover:bg-gray-600">Privacy Policy</a>
         </li>
         <router-link
